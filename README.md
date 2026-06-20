@@ -2,6 +2,10 @@
 
 A new Flutter project.
 
+## Screenshot
+
+![Food Recipes App Screenshot](screenshot/Screenshot 2026-06-20 201955.png)
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
