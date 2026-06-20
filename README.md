@@ -4,7 +4,7 @@ A new Flutter project.
 
 ## Screenshot
 
-![Food Recipes App Screenshot](screenshot/Screenshot 2026-06-20 201955.png)
+![Food Recipes App Screenshot](screenshot/Screenshot_2026-06-20_201955.png)
 
 ## Getting Started
 
