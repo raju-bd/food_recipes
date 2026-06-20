@@ -1,16 +1,10 @@
 import 'package:flutter/material.dart';
+import 'model/recipe.dart';
 class RecipeListPage extends StatelessWidget {
   RecipeListPage({super.key});
 
-  final List<String> recipes = [
-    'Pasta Carbonara',
-    'Caprese Salad',
-    'Banana Smoothie',
-    'Chicken Stir-Fry',
-    'Grilled Salmon',
-    'Vegetable Curry',
-    'Berry Parfait',
-  ];
+  final List<Recipe> recipes = Recipe.getRecipes();
+
 
   @override
   Widget build(BuildContext context) {
@@ -25,8 +19,8 @@ class RecipeListPage extends StatelessWidget {
         itemBuilder: (context, index) {
           return ListTile(
             leading: const Icon(Icons.restaurant_menu),
-            title: Text(recipes[index]),
-            subtitle: Text("description")
+            title: Text(recipes[index].title),
+            subtitle: Text(recipes[index].description)
           );
         },
       ),
