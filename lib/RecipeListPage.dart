@@ -14,7 +14,7 @@ class RecipeListPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: const [
              Text('Food Recipes'),
-              Text('Developed by Md. Mahufuzul Amin RAJU', style: TextStyle(color: Colors.lightBlueAccent,fontSize: 12, fontStyle: FontStyle.italic)),
+              Text('Developed by Md. Mahfuzul Amin RAJU', style: TextStyle(color: Colors.lightBlueAccent,fontSize: 12, fontStyle: FontStyle.italic)),
           ],
         ),
         titleTextStyle: TextStyle(color: Colors.white, fontSize: 24, fontWeight: FontWeight.bold),
