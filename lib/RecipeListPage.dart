@@ -10,7 +10,13 @@ class RecipeListPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Food Recipes'),
+        title: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: const [
+             Text('Food Recipes'),
+              Text('Developed by Md. Mahufuzul Amin RAJU', style: TextStyle(fontSize: 12, fontStyle: FontStyle.italic)),
+          ],
+        ),
         titleTextStyle: TextStyle(color: Colors.white, fontSize: 24, fontWeight: FontWeight.bold),
         backgroundColor: Colors.lightBlue,
       ),
@@ -18,9 +24,9 @@ class RecipeListPage extends StatelessWidget {
         itemCount: recipes.length,
         itemBuilder: (context, index) {
           return ListTile(
-            leading: const Icon(Icons.restaurant_menu),
-            title: Text(recipes[index].title),
-            subtitle: Text(recipes[index].description)
+            leading: const Icon(Icons.fastfood, color: Colors.grey),
+            title: Text(recipes[index].title, style: TextStyle(fontWeight: FontWeight.bold)),
+            subtitle: Text(recipes[index].description, style: TextStyle(color: Colors.grey)),
           );
         },
       ),
